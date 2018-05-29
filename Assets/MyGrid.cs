@@ -41,6 +41,7 @@ public class MyGrid : MonoBehaviour {
                 triangles [ti + 5] = vi + xSize + 2;
 
                 mesh.triangles = triangles;
+                mesh.RecalculateNormals();
                 yield return wait;
             }
         }
